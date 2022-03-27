@@ -58,6 +58,7 @@ exports.addNewProduct = async (req, res) => {
             name: req.body.name,
             price: req.body.price,
             available: req.body.available,
+            dateCreated: Date.now(),
         });
 
         res.status('200').json({
